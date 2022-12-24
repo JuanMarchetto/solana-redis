@@ -1,0 +1,15 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+solana_redis = "3aEEgPbKa3QY3U65yxj4e2BBe2HbBXj4iCHJiHbnqKzU"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/juan/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
